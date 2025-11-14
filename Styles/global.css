@@ -1,0 +1,108 @@
+:root {
+  /* Cores principais */
+  --cor-primaria: #E74C25; /* Azul */
+  --cor-secundaria: #052ed1; /* Azul mais escuro */
+
+  /* Cores de fundo */
+  --fundo-claro: #ffffff;
+  --fundo-escuro: #121212;
+  --fundo-cinza-claro:#f7f9fc;
+
+  /* Cores de texto */
+  --texto-principal: #212121;
+  --texto-secundario: #757575;
+  --texto-claro: #ffffff;
+  --texto-negritado: #000000;
+  --texto-tema:#E74C25;
+
+  /* Cores Button*/
+  --btn-fundo-principal: #E74C25;
+  --btn-fundo-white:#ffffff;
+  
+
+  /* Cores auxiliares */
+  --sucesso: #4caf50;
+  --erro: #f44336;
+  --aviso: #ff9800;
+  --info: #2196f3;
+}
+/* CSS Global */
+:root {
+  --font-primary: "Roboto", sans-serif;
+  --font-secondary: "Poppins", sans-serif;
+}
+body {
+  font-family: var(--font-primary);
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-secondary);
+  font-weight: 700;
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+.btn {
+  font-family: var(--font-primary);
+  letter-spacing: 0.5px;
+}
+.container {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container-p {
+  display: flex;
+  width: 1200px;
+  align-items: center;
+  justify-content: left;
+}
+.hero {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px 20px 0px;
+}
+.banner {
+  display: flex;
+  justify-content: center;
+}
+.container-limitado {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+  margin-bottom: 20px;
+
+}
+.margin-section-40 {
+  margin-top: 40px;
+}
+.margin-section-60 {
+  margin-top: 60px;
+}
+.margin-section-80 {
+  margin-top: 120px;
+}
+.margin-section-120 {
+  margin-top: 120px;
+}
+.global-flex{
+  display: flex;
+}
+.global-flex-direction-c{
+  flex-direction: column;
+}
+.global-flex-direction-r{
+  flex-direction: row;
+}
+

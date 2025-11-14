@@ -1,0 +1,138 @@
+/* Estilo do Header */
+.header {
+  background-color: var(--fundo-claro);
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px 0px 20px;
+}
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  color: white;
+}
+.logo img {
+  width: 160px;
+  height: 80px;
+  display: block;
+  object-fit: contain;
+}
+
+/* Navegação */
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color:var(--texto-negritado);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.7px;
+}
+
+/* Botões */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.button {
+  background:var(--fundo-claro);
+  color: var(--cor-primaria);
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.button-outline {
+  background: transparent;
+  color: var(--texto-claro);
+  border: 2px solid white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.button-background {
+  background: var(--btn-fundo-principal);
+  color: var(--texto-claro);
+  border: 2px solid white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ==================== MENU MOBILE ==================== */
+.menu-toggle {
+  display: none;
+  font-size: 32px;
+  color: var(--cor-primaria);
+  cursor: pointer;
+}
+
+/* Menu lateral */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 250px;
+  height: 100vh;
+  background-color: var(--cor-primaria);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  transition: right 0.3s ease;
+  z-index: 999;
+}
+
+.mobile-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.mobile-menu .button,
+.mobile-menu .button-outline {
+  width: 100%;
+  text-align: center;
+}
+/* Estilo do botão de fechar */
+.close-menu {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 32px;
+  cursor: pointer;
+  align-self: flex-end; /* Alinha o botão à direita */
+  margin-bottom: 20px; /* Espaçamento abaixo do botão */
+}
+
+/* ==================== RESPONSIVIDADE ==================== */
+
+/* Para telas menores que 768px */
+@media (max-width: 863px) {
+  .container {
+    width: 90%;
+  }
+
+  /* Esconde nav e ações */
+  .nav,
+  .actions {
+    display: none;
+  }
+
+  /* Exibe menu sanduíche */
+  .menu-toggle {
+    display: block;
+  }
+}

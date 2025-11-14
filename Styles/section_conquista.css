@@ -1,0 +1,71 @@
+.section-conquista {
+  background-color: #033b63;
+  color: #fff;
+  background-repeat: repeat;
+  position: relative;
+}
+
+.section-conquista{
+    margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.image-area {
+  flex: 1 1 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.image-area img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.text-area {
+  flex: 1 1 50%;
+}
+
+.text-area h1 {
+  font-size: 2.2rem;
+  line-height: 1.2;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+.stat .number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.stat .label {
+  font-size: 1.1rem;
+  color: #fff;
+  margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+  .section-conquista .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-area {
+    margin-top: 30px;
+  }
+
+  .stats {
+    gap: 20px;
+  }
+}

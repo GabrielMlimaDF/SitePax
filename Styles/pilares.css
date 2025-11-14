@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* ===== Section ===== */
+.pilares {
+  padding: 80px 20px;
+  background-color: #f9f9f9;
+}
+
+.container-pilares {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.titulo {
+  font-size: 2.2rem;
+  color: #001b44;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+/* ===== Cards ===== */
+.card {
+  border-radius: 15px;
+  padding: 35px 30px;
+  position: relative;
+  color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: auto;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+.card .icone {
+  width: 38px;
+  height: 38px;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 12px;
+  margin-bottom: 18px;
+}
+
+/* Cores */
+.card.vermelho {
+  background-color: #ef4b4c;
+}
+
+.card.vermelho .icone {
+  background-color: #001b44;
+}
+
+.card.azul {
+  background-color: #001b44;
+}
+
+.card.azul .icone {
+  background-color: #ef4b4c;
+}
+
+.card.cinza {
+  background-color: #e9e9e9;
+  color: #001b44;
+}
+
+.card.cinza .icone {
+  background-color: #ef4b4c;
+}
+
+/* Texto */
+.card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ===== GRID padrão (telas grandes) ===== */
+@media (min-width: 1221px) {
+  .pilares-swiper .swiper-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+  }
+   .pilares-swiper .swiper-slide {
+    width: auto !important;
+  }
+
+  .swiper-pagination {
+    display: none !important;
+  }
+}
+
+/* ===== Swiper ajustes ===== */
+.swiper {
+  overflow: hidden;
+}
+
+.swiper-pagination-bullet {
+  background: #ef4b4c;
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  background: #ef4b4c;
+  opacity: 1;
+}

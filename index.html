@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colégio Pax Gama online | Educação Infantil | Ensino Fundamental</title>
+  <link rel="icon" href="storage/Logo-3.svg" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="Styles/styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+<!-- Open Graph para Redes Sociais -->
+<meta property="og:title" content="Educação Infantil e Ensino Fundamental de Qualidade | Colégio Pax Gama-DF">
+<meta property="og:description" content="O Colégio Pax, no Gama-DF, oferece Educação Infantil e Ensino Fundamental com excelência. Ambiente acolhedor, professores qualificados e ensino que inspira o futuro.">
+<meta property="og:image" content="storage/2024/abrir-empresa.jpg">
+<meta property="og:url" content="https://www.colegiopaxgama.com.br">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Colégio Pax Gama">
+  <script defer src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+ 
+  <header class="header">
+      <div class="container">
+        <div class="logo">
+          <img src="storage/Logo-3.svg" alt="Colégio Pax Gama - logotipo" />
+        </div>
+
+        <!-- Menu padrão para telas grandes -->
+        <nav class="nav">
+          <a href="#">Home</a>
+          <a href="#">Quem Somos</a>
+          <a href="#">Educação Infantil</a>
+          <a href="#">Ensino Fundamental</a>
+          <a href="#">Grade Curricular</a>
+          <a href="#">Projetos</a>
+        </nav>
+
+        <div class="actions">
+          <button type="button" class="btn button-background">Portal do aluno</button>
+                  </div>
+
+        <!-- Ícone do menu sanduíche para telas pequenas -->
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      </div>
+    </header>
+
+    <!-- Menu lateral para mobile -->
+    <div class="mobile-menu" id="mobileMenu">
+      <button type="button" class="close-menu" onclick="toggleMenu()">X</button>
+      <!-- Botão de fechar -->
+        <a href="#">Home</a>
+          <a href="#">Quem Somos</a>
+          <a href="#">Educação Infantil</a>
+          <a href="#">Ensino Fundamental</a>
+          <a href="#">Grade Curricular</a>
+          <a href="#">Projetos</a>
+      <button type="button" class="btn button">Acessos</button>
+      <button type="button" class="btn button-outline">Abra sua conta</button>
+    </div>
+
+    <section class="banner">
+      <div class="slider">
+      <!-- Slide 1 -->
+      <div
+        class="slide active"
+        style="
+          background-image: url('storage/banner_home.png');
+        "
+      >
+        <div class="overlay"></div>
+        <div class="container-slide">
+          <div class="slide-content">
+            <h1>Colégio Pax<br />Matrículas abertas.</h1>
+            <p>Educação Infantil com até 30% de desconto.</p>
+            <button type="button">Saiba mais</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div
+        class="slide"
+        style="
+          background-image: url('storage/Banner_home_2.png');
+        "
+      >
+        <div class="overlay"></div>
+        <div class="container-slide">
+          <div class="slide-content">
+           <h1>Educação<br />que inspira o futuro,</h1>
+            <p>Educação Infantil e Ensino fundamental até o 9º Ano.</p>
+            <button type="button">Saiba mais</button>
+          </div>
+        </div>
+      </div>
+      <!-- Slide 3 -->
+     
+      <!-- Botão Pausar -->
+      <div class="pause">
+        <div class="container-slide">
+                   <button type="button" id="pauseBtn" class="btn-pausa"><span><svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect y="0.5" width="2" height="8" rx="1" fill="black"></rect><rect x="4" y="0.5" width="2" height="8" rx="1" fill="black"></rect></svg></span>pausar</button>
+        </div>
+      </div>
+
+      <!-- Controles -->
+      <div class="controls">
+        <div class="container-slide">
+          <span id="prevBtn">&lt;</span>
+          <div class="dots" id="dots"></div>
+          <span id="nextBtn">&gt;</span>
+        </div>
+      </div>
+    </div>
+    </section>
+
+
+      <!-- Paginação (bolinhas) -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+<section class="pilares">
+  <div class="container-pilares">
+  <h2 class="titulo">Nossos Pilares</h2>
+  </div>  
+  <div class="container-pilares">
+            <!-- Swiper container -->
+      <div class="swiper pilares-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide card vermelho">
+            <div class="icone"></div>
+            <h3>ALTA QUALIDADE</h3>
+            <p>Os alunos estudam e realmente aprendem, desenvolvendo a fluência e proficiência na língua.</p>
+          </div>
+
+          <div class="swiper-slide card azul">
+            <div class="icone"></div>
+            <h3>EVOLUÇÃO TANGÍVEL</h3>
+            <p>A escola, alunos e famílias conseguem acompanhar de perto a evolução do aprendizado.</p>
+          </div>
+
+          <div class="swiper-slide card cinza">
+            <div class="icone"></div>
+            <h3>DESCOMPLICADO</h3>
+            <p>As escolas, alunos e famílias contam com um programa de fácil aplicação e implementação.</p>
+          </div>
+
+          <div class="swiper-slide card azul">
+            <div class="icone"></div>
+            <h3>ACESSÍVEL</h3>
+            <p>O PES custa 10 vezes menos ao ano que um curso de inglês para a família e melhor custo-benefício para a escola.</p>
+          </div>
+        </div>
+
+        <!-- Paginação -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+<!-- Conquistas -->
+<section class="section-conquista">
+  <div class="container">
+    <div class="image-area">
+      <img src="storage/menina-1.png" alt="Pessoa feliz" />
+    </div>
+
+    <div class="text-area">
+      <h1>Fundado em 1961, sua história remonta o sucesso.</h1>
+
+      <div class="stats">
+        <div class="stat">
+          <p class="number">+ de 3.590</p>
+          <p class="label">alunos</p>
+        </div>
+        <div class="stat">
+          <p class="number">+ de 100 </p>
+          <p class="label">projetos realizados</p>
+        </div>
+        <div class="stat">
+          <p class="number">2.000 mil</p>
+          <p class="label">famílias atendidas</p>
+        </div>
+        <div class="stat">
+          <p class="number">+ de 60</p>
+          <p class="label">anos de histórias</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <script src="js/slider.js"></script>   
+    <script src="js/btn_lateral.js"></script>
+</body>
+</html>

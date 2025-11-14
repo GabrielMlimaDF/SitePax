@@ -1,0 +1,44 @@
+# =========================
+# Ignorar pastas do sistema
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Ignorar dependências (caso use npm)
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# =========================
+# Ignorar arquivos de build (caso existam)
+# =========================
+dist/
+build/
+
+# =========================
+# Ignorar VS Code
+# =========================
+.vscode/
+
+# =========================
+# Ignorar arquivos temporários
+# =========================
+*.log
+*.tmp
+*.cache
+
+# =========================
+# Ignorar ambiente local
+# =========================
+.env
+.env.local
+.env.*.local
+
+# =========================
+# Ignorar arquivos de deploy
+# =========================
+*.tar.gz
+*.zip
