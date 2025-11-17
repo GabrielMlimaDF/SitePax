@@ -19,8 +19,8 @@
         opacity: 0;
         z-index: 0;
       }
-      .slide-1 { background-image: url("/storage/matriculas_abertas_desktop.png"); }
-      .slide-2 { background-image: url("/storage/matriculas_abertas_desktop.png"); }
+      .slide-1 { background-image: url("/storage/matriculas_abertas_desktop_v1.png"); }
+      .slide-2 { background-image: url("/storage/matriculas_abertas_desktop_v1.png"); }
 
       .slide.active {
         opacity: 1;
@@ -139,7 +139,7 @@
         border: 2px solid var(--fundo-claro);
       }
 @media (max-width: 768px) {
-  .slide-1 { background-image: url("/storage/matriculas_abertas_mobile.png"); }
-  .slide-2 { background-image: url("/storage/matriculas_abertas_mobile.png"); }
+  .slide-1 { background-image: url("/storage/matriculas_abertas_mobile_v1.png"); }
+  .slide-2 { background-image: url("/storage/matriculas_abertas_mobile_v1.png"); }
   }
       
