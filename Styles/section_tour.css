@@ -2,20 +2,20 @@
 .tour-section {
     width: 100%;
     padding: 80px 0;
-    background-color: var(--fundo-cinza-claro);
+    background-color: #102134;
 }
 
 /* CONTAINER DO TÍTULO */
 .tour-title-container {
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 670px;
+      margin: 0 auto;
     text-align: center;
     padding: 0 20px;
 }
 
 .tour-title-container h2 {
     font-size: 3rem;
-    color: var(--texto-azul-natural);
+    color: #ffffff;
     font-weight: 700;
     margin-bottom: 20px;
 }

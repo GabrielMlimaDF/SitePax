@@ -1,7 +1,7 @@
 :root {
   /* Cores principais */
-  --cor-primaria: #E74C25; /* Azul */
-  --cor-secundaria: #052ed1; /* Azul mais escuro */
+  --cor-primaria: #e3a327; /* Azul */
+  --cor-secundaria: #102134; /* Azul mais escuro */
 
   /* Cores de fundo */
   --fundo-claro: #ffffff;
@@ -9,15 +9,15 @@
   --fundo-cinza-claro:#f7f9fc;
 
   /* Cores de texto */
-  --texto-principal: #212121;
-  --texto-secundario: #757575;
+  --texto-principal: #102134;
+  --texto-secundario: #404751;
   --texto-claro: #ffffff;
   --texto-negritado: #000000;
-  --texto-tema:#E74C25;
+  --texto-tema:#e3a327;
   --texto-azul-natural:#001b44;
 
   /* Cores Button*/
-  --btn-fundo-principal: #E74C25;
+  --btn-fundo-principal:#e3a327;
   --btn-fundo-white:#ffffff;
   
 
